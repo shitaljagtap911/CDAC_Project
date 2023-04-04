@@ -36,13 +36,7 @@ pipeline {
 	}
       }
     }
-
-    stage ('Generate build') {
-      steps {
-        sh 'mvn clean install'
-      }
-    }
-
+    
     stage ('Deploy to server') {
             steps {
            sshagent(['application_server']) {
