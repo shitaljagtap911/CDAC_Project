@@ -12,7 +12,7 @@ pipeline {
     
     stage ('Check secrets') {
       steps {
-      sh 'trufflehog https://github.com/shitaljagtap911/CDAC_Project.git -f json -o truffelhog_output.json || true'
+      sh 'trufflehog3 https://github.com/shitaljagtap911/CDAC_Project.git -f json -o truffelhog_output.json || true'
       }
     }
     
