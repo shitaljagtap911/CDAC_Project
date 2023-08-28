@@ -22,7 +22,7 @@ pipeline {
                     -o "./" 
                     -s "./"
                     -f "ALL" 
-                    --prettyPrint''', odcInstallation: 'DP_Check'
+                    --prettyPrint''', odcInstallation: 'dp-check'
 
                 dependencyCheckPublisher pattern: 'dependency-check-report.xml'
             }
